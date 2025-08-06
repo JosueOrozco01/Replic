@@ -112,3 +112,22 @@ body {
   color: #1877f2;
   text-decoration: none;
 }
+
+.cuenta {
+    width: 100%;
+  background: #42b72a;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
