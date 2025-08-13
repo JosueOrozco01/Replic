@@ -8,3 +8,6 @@ Create Secrets
 
 Create of the link with GitHub
 <img width="1591" height="510" alt="image" src="https://github.com/user-attachments/assets/fc9da768-938d-48d2-bb56-fab96aa3c3f9" />
+
+Secrets in Github
+<img width="1038" height="916" alt="image" src="https://github.com/user-attachments/assets/7b1e7064-80c7-4034-9f65-d7c998d937ec" />
