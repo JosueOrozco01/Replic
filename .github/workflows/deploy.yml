@@ -16,20 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Doppler CLI
-        uses: dopplerhq/cli-action@v1
-
       - name: Setup Doppler
         uses: dopplerhq/cli-action@v1
         with:
           project: "hw-04"
           config: "prd"
-
-      - name: Setup Doppler
-        uses: dopplerhq/cli-action@v1
-        with:
-          project: "hw-04"
-          config: "prd"  
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
