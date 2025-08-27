@@ -1,12 +1,33 @@
-# React + Vite
+# Hooks Utilizados 
+## useState
+### ¿Por qué se utilizó?
+El hook useState se utilizó para gestionar el estado local dentro de los componentes funcionales. Es fundamental para:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Mantener y actualizar el estado de la lista de tareas
+*Controlar el filtro activo actual (all, active, completed)
+*Gestionar el valor del input en el formulario de nuevas tareas
+*Permitir la reactividad de la interfaz cuando los datos cambian
 
-Currently, two official plugins are available:
+## useEffect
+### ¿Por qué se utilizó?
+El hook useEffect se implementó para manejar efectos secundarios en la aplicación:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*Sincronizar el estado de las tareas con el localStorage del navegador
+*Ejecutar código cuando ciertas dependencias cambian
+*En la implementación inicial, se usó para guardar automáticamente en localStorage cuando las tareas se actualizaban
 
-## Expanding the ESLint configuration
+## useLocalStorage (Custom Hook)
+### ¿Por qué se creó este custom hook?
+Desarrollamos el custom hook useLocalStorage para:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*Abstraer y centralizar toda la lógica de persistencia en localStorage
+*Permitir reutilización en múltiples componentes sin duplicar código
+*Seguir el principio DRY (Don't Repeat Yourself)
+*Simplificar el manejo de errores y la serialización/deserialización de datos
+*Facilitar el testing y mantenimiento del código
+*Hacer que los componentes principales fueran más limpios y legibles
+
+## Link CloudFront
+
+d18q1lhz8529bj.cloudfront.net/index.html
+
